@@ -1,6 +1,6 @@
 @import url('./reset.css');
 
-@font-face {
+@font-face{
   font-family: Raleway-regular;
   src: url('../fonts/Raleway-Regular.ttf');
 }
@@ -8,7 +8,7 @@
   font-family: Raleway-bold;
   src: url('../fonts/Raleway-Bold.ttf');
 }
-@font-face {
+@font-face{
   font-family: Raleway-black;
   src: url('../fonts/Raleway-Black.ttf');
 }
@@ -20,7 +20,7 @@
 body{
   background-color: #000000;
 }
-p {
+p{
   color: #ffffff;
 }
 h1{
@@ -35,7 +35,7 @@ h1{
   text-emphasis-color: transparent;
   font-weight: 900;  
 }
-h2 {
+h2{
   font-family: Raleway-bold;
   color: #33A8DB;
   font-size: 2rem;
@@ -48,10 +48,13 @@ a{
   font-family: Raleway-bold;
   text-decoration: none;
 }
+a:hover{
+  color: #E5E044;
+}
 section{
   margin: 100px auto;
 }
-.module {
+.module{
   color: #ffffff;
   font-size: 1rem;
   word-wrap: break-word;
@@ -75,7 +78,7 @@ section{
 }
 .banner p{
   margin: 16px 0 24px;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 .banner .logo{
   background: rgba(0, 0, 0, 0.2);
@@ -104,13 +107,22 @@ section{
   border-color: #3BA1CD  #1572B7;
   border-image-slice: 10;
 }
+.banner .banner-content button:hover{
+  font-size: 1.1rem;
+  border-color: #E5E044;
+  color: #ffffff;
+  cursor: pointer;
+}
 
 /* section 1 */
-#course-content {
+#course-content{
   width: 800px;
   text-align: center;
 }
-#course-content .modules-list {
+#course-content .course-description{
+line-height: 1.3rem;
+}
+#course-content .modules-list{
   margin: 24px 0;
 }
 #course-content .modules-list .module{
@@ -122,6 +134,15 @@ section{
   box-shadow: inset 0px 4px 4px 4px black;
   font-size: 0.9rem;
   padding: 16px;
+}
+#course-content .modules-list .module:hover{
+  border: 1px solid #E5E044;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#course-content .modules-list .module span{
+  color: #33A8DB;
+  font-size: 0.9rem;
 }
 #course-content .modules-list .module span{
   color: #33A8DB;
@@ -136,7 +157,7 @@ section{
   height: 560px;
   width: auto;
 }
-#transform-world p {
+#transform-world p{
   font-family: Raleway-black;
   text-transform: lowercase ;
   font-size: 2.5rem;
@@ -151,8 +172,11 @@ section{
   text-align: center;
   width: 800px;
 }
-#professional-challenges img {
+#professional-challenges img{
   margin: 32px 0;
+}
+#professional-challenges p{
+line-height: 1.3rem;
 }
 
 /* footer */
