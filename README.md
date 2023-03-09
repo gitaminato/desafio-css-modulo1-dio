@@ -1,8 +1,8 @@
-# Desafio 01: Criando minha primeira Landing Page com HTML e CSS
+# Módulo 1 CSS - Desafio 01: Criando minha primeira Landing Page com HTML e CSS
 
 Esse é o primeiro desafio do Bootcamp de formação em CSS da DIO, na qual o objetivo foi construir minha primeira Landing Page com HTML e CSS, colocando em prática os fundamentos do CSS, além de trabalhar com as unidades de medidas relativas e absolutas aprendidas ao longo da trilha.
 
-[Clique aqui](https://micheleambrosio.github.io/dio-trilha-css-desafio-01/) para acessar o meu resultado final da Landing Page criada a partir do desafio!
+[Clique aqui](https://gitaminato.github.io/desafio-css-modulo1-dio/) para acessar o meu resultado final da Landing Page criada a partir do desafio!
 
 ![image](https://user-images.githubusercontent.com/55519539/183538055-6cce606c-7d1d-4d15-a4be-ffeb5b37c956.png)
 
