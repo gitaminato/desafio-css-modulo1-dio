@@ -1,4 +1,5 @@
 @import url('./reset.css');
+
 @font-face {
   font-family: Raleway-regular;
   src: url('../fonts/Raleway-Regular.ttf');
@@ -16,12 +17,39 @@
 }
 
 /* gerais */
-
+body{
+  background-color: #000000;
+}
 p {
   color: #ffffff;
-  font-size: 1rem;
-  word-wrap: break-word;
-  padding: 1rem;
+}
+h1{
+  font-family: Raleway-black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  font-weight: 900;  
+}
+h2 {
+  font-family: Raleway-bold;
+  color: #33A8DB;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+a{
+  color: #33A8DB;
+  font-family: Raleway-bold;
+  text-decoration: none;
+}
+section{
+  margin: 100px auto;
 }
 .module {
   color: #ffffff;
@@ -29,91 +57,75 @@ p {
   word-wrap: break-word;
   padding: 2rem;
 }
-span{
-  color: #33A8DB;
-}
-h1{
-  font-family: Raleway-black;
-  font-size: 2rem;
-  text-transform: uppercase;
-  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-emphasis-color: transparent;
-}
-h2 {
-  font-family: Raleway-bold;
-  color: #3BA1CD;
-  font-size: 2rem;
-}
-a{
-  color: #33A8DB;
-  font-family: Raleway-bold;
-  text-decoration: none;
-}
 
-/* sessões */
-header{
+/* header */
+.banner{
   font-family: Raleway-regular;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 114, 183, 0.5) 52%, rgba(0, 0, 0, 0) 100%);
-  background-color: black;
-  border-bottom: 1px solid #3BA1CD;
-  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+  background: 600px no-repeat cover;
+  border-bottom: 1px solid #33A8DB80;
   box-sizing: border-box;
+  padding-top: 60px;
 }
-.banner-content{
-  background: url('../images/banner.png') scroll padding-box;
+.banner .banner-content{
+  text-align: center;
+  color: white;
+  width: 600px;
+  margin: auto;
 }
-header div{
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 16px;
+.banner p{
+  margin: 16px 0 24px;
+  line-height: 1rem;
 }
-.logo{
+.banner .logo{
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 100%;
-  width: 248px;
-  height: 214px;
-  padding: 2rem;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  padding: 16px;
+  margin-bottom: 16px;
 }
-header button{
+.banner .logo img{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.banner .banner-content button{
   font-family: Raleway-bold;
-  font-size: 1.2rem;
-  border-color: #3BA1CD  #1572B7;
+  font-size: 1rem;
   background: none;
-  color: #3BA1CD;
+  color: #31A8DD;
   text-transform: uppercase;
   margin-bottom: 2rem;
-  padding: 20px 60px;
+  padding: 16px 32px;
+  letter-spacing: 4px;
+  border-color: #3BA1CD  #1572B7;
+  border-image-slice: 10;
 }
 
-main{
-  background: #000000;
-  text-align: center;
-  
-}
 /* section 1 */
-#course-content{
-  padding-top: 80px;
-  padding-bottom: 40px;
+#course-content {
+  width: 800px;
+  text-align: center;
 }
-.modules-list{
-display: flex;
-flex-direction: column;
-align-items: center;
+#course-content .modules-list {
+  margin: 24px 0;
 }
-.module{
+#course-content .modules-list .module{
   background-color: #252525;
-  border-radius: 50px;
-  border: solid #33A8DB;
-  width: 800px; 
-  margin: 15px;
+  border-radius: 100px;
+  border: 1px solid #33A8DB;
+  width: 530px; 
+  margin: 0 auto 24px;
   box-shadow: inset 0px 4px 4px 4px black;
-  font-size: 20px;
+  font-size: 0.9rem;
+  padding: 16px;
+}
+#course-content .modules-list .module span{
+  color: #33A8DB;
+  font-size: 0.9rem;
 }
 
 /* section 2 */
@@ -121,35 +133,35 @@ align-items: center;
   background: url('../images/woman-code.png') top left no-repeat fixed padding-box content-box;
   background-size: cover;
   border: 1px solid #33A8DB;
-  height: 500px;
-  width: auto; 
-}
-#transform-world div {
-  height: 500px;
-  width: 600px;
+  height: 560px;
+  width: auto;
 }
 #transform-world p {
   font-family: Raleway-black;
   text-transform: lowercase ;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
   padding: 100px;
+  max-width: 250px;
+  text-shadow: 3px 2px #33A8DB;
 }
+
 /* section 3 */
 #professional-challenges{
-  padding-top: 80px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #3BA1CD;
-}
-
-
-footer{
-  background-color: #000000;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 114, 183, 0.5) 52%, rgba(0, 0, 0, 0) 100%);
   text-align: center;
-  margin: 0;
+  width: 800px;
 }
-.dio-logo{
-  padding-top: 50px;
-  padding-bottom: 0;
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+/* footer */
+footer{
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+  text-align: center;
+  padding: 60px 0;
+  border-top: 1px solid #33A8DB80;
+}
+footer .dio-logo{
+  width: 300px;
 }
